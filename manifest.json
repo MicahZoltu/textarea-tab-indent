@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Textarea Tab Indent",
+	"version": "1",
+	"description": "Pressing tab in a textarea will insert the tab character.  Also supports multi-line selection indentation.",
+	"icons": {
+		"512": "icon.png"
+	},
+	"permissions": [
+		"activeTab"
+	],
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Activate tab indent on this page.",
+		"default_area": "navbar"
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	}
+}
